@@ -1,4 +1,4 @@
 
 @echo off 
-python "StartupJarvis\main.py"
+python "D:\MINE\Project\Personal\Mainan\Python\PercobaanVoiceRecognition\StartupJarvis\main.py"
 timeout 0.1
