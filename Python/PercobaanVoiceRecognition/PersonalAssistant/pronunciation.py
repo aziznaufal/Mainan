@@ -7,7 +7,7 @@ import time
 
 class TextToSpeech:
     CHUNK = 1024
-
+    
     def __init__(self, words_pron_dict:str = 'Python/PercobaanVoiceRecognition/asset/pronunciation/American-English/cmudict-0.7b.txt'):
         self._l = {}
         self._load_words(words_pron_dict)
@@ -19,6 +19,8 @@ class TextToSpeech:
                     key, val = line.split('  ', 2)
                     self._l[key] = re.findall(r"[A-Z]+", val)
 
+    def getList(self):
+        return self._l
 
     def get_pronunciation(self, str_input):
         list_pron = []
