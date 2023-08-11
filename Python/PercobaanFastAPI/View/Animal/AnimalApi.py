@@ -16,5 +16,9 @@ async def root():
     return _animalCon.getAllAnimal()
 
 @router.get("/{animalname}")
-async def root(animalname):
+async def root(animalname : str):
     return _animalCon.getAnimalbyName(animalname)
+
+@router.put("/")
+async def root(item : animalModel.animal):
+    return _animalCon.insertAnimal(item)
