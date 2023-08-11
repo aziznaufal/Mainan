@@ -1,5 +1,5 @@
 # Register all route here
-from View.Animal import AnimalApi
+from Route.Animal import AnimalApi
 animalRoute = AnimalApi.router
 
 
